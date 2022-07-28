@@ -34,7 +34,7 @@ public class StudentController {
 	}
 	@GetMapping
 	public List<Student> getAllStudents() {
-		
+		System.out.println("Fetching Students...");
 		return studentRepository.findAll();
 		
 	}
